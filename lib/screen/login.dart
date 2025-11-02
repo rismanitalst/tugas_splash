@@ -33,7 +33,6 @@ class Login extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // Teks masih di kiri
               const Text(
                 "Welcome  ",
                 style: TextStyle(
@@ -50,6 +49,21 @@ class Login extends StatelessWidget {
                   color: Colors.blueGrey,
                 ),
               ),
+
+              const SizedBox(height: 40),
+
+              //TextField Input Email
+              TextField(
+                keyboardType: TextInputType.emailAddress,
+                decoration: InputDecoration(
+                labelText: 'Email',
+                hintText: 'Masukkan email Anda',
+                prefixIcon: const Icon(Icons.email_outlined, color: Color(0xFF00008B)),
+                filled: true,
+                fillColor: const Color(0xFFF6F6F6),
+                ),
+              ),
+
             ],
           ),
           ),
