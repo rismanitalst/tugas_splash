@@ -22,6 +22,25 @@ class SplashScreen1 extends StatelessWidget {
                   fit: BoxFit.cover,)
               ),
             ),
+            const SizedBox(height: 28),
+            const Text(
+            "Hey there 👋",
+              style: TextStyle(
+                fontSize: 28,
+                fontWeight: FontWeight.bold,
+                color: Colors.black87,
+              ),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+            "No wallet? No worries.\nLet's make it digital 💳",
+            textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 13,
+                color: Colors.blueGrey,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
           ],
         ),
       ),
