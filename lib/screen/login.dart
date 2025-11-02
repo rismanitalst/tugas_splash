@@ -119,6 +119,41 @@ class Login extends StatelessWidget {
                   ),
                 ),
               ),
+
+              const SizedBox(height: 20),
+              //Tombol Login 
+              SizedBox(
+                width: double.infinity,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text("Login berhasil! 🔐", textAlign: TextAlign.center),
+                        duration: Duration(seconds: 2),
+                      ),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFF00008B), // biru tua elegan
+                    foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(14), // lebih halus
+                    ),
+                    elevation: 4, // efek sedikit naik
+                    shadowColor: Colors.blueAccent,
+                  ),
+                  child: const Text(
+                    "Login",
+                    style: TextStyle(
+                      fontSize: 17,
+                      fontWeight: FontWeight.w600,
+                      letterSpacing: 0.5,
+                    ),
+                  ),
+                ),
+              ),
+
             ],
           ),
           ),
