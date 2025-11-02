@@ -41,6 +41,7 @@ class SplashScreen1 extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
+            //* bagian indikator
             const SizedBox(height: 25),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -73,6 +74,31 @@ class SplashScreen1 extends StatelessWidget {
                 ),
               ],
             ),
+            //bagian button lanjutan
+            const SizedBox(height: 30),
+              Container(
+                margin: const EdgeInsets.symmetric(horizontal: 40),
+                child: SizedBox(
+                  height: 42,
+                  width: double.infinity,
+                child: ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/splash2');
+                },  
+                  style: ElevatedButton.styleFrom(
+                  backgroundColor: Color(0xFF00008B),
+                   shape: RoundedRectangleBorder(
+                   borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                child: const Text(
+                 "Continue",
+                 style: TextStyle(fontSize: 15, color: Colors.white),
+       ),
+    ),
+  ),
+),
+
           ],
         ),
       ),
