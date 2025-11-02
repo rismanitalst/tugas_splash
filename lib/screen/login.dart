@@ -103,6 +103,22 @@ class Login extends StatelessWidget {
                   ),
                 ),
               ),
+
+              const SizedBox(height: 8),
+                //Tambahkan tombol Lupa Password
+                  Align(
+                   alignment: Alignment.centerRight, 
+                        child: TextButton(
+                        onPressed: () {},
+                        child: Text(
+                        'Lupa Password?',
+                        style: TextStyle(
+                        color: Colors.blue[800],
+                        fontSize: 14,
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
           ),
