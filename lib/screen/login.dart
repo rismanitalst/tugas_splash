@@ -61,6 +61,21 @@ class Login extends StatelessWidget {
                 prefixIcon: const Icon(Icons.email_outlined, color: Color(0xFF00008B)),
                 filled: true,
                 fillColor: const Color(0xFFF6F6F6),
+                  border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide: BorderSide(color: Colors.grey[300]!),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                    borderSide: const BorderSide(
+                    color: Color(0xFF00008B), // biru tua pas fokus
+                    width: 2,
+                    ),
+                ),
+
                 ),
               ),
 
