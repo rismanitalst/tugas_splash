@@ -9,8 +9,10 @@ class Login extends StatelessWidget {
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(20.0),
+          child: Center(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start, // biar ke kiri
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const SizedBox(height: 80),
 
@@ -33,7 +35,7 @@ class Login extends StatelessWidget {
 
               // Teks masih di kiri
               const Text(
-                "Welcome ",
+                "Welcome  ",
                 style: TextStyle(
                   fontSize: 26,
                   fontWeight: FontWeight.bold,
@@ -49,6 +51,7 @@ class Login extends StatelessWidget {
                 ),
               ),
             ],
+          ),
           ),
         ),
       ),
